@@ -1,0 +1,6 @@
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\bin\Project_ThayTri.dll.config
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\bin\Project_ThayTri.dll
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\bin\Project_ThayTri.pdb
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\obj\Debug\Project_ThayTri.csprojResolveAssemblyReference.cache
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\obj\Debug\Project_ThayTri.dll
+D:\LAPTRINH\DotNet\dotNet_aTri\Project_ThayTri\Project_ThayTri\obj\Debug\Project_ThayTri.pdb

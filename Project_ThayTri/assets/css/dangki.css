@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(/img/form-dangky/bg.jpg.webp) top center / cover no-repeat;
+}
+
+#main {
+
+}
+
+.container {
+    padding: 112px 0;
+}
+
+.content {
+    padding: 0 15px;
+}
+
+.content__box {
+    margin: 0 15px;   
+}
+
+.box-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    position: relative;
+    min-height: 500px;
+}
+.box-item .box-item-dk {
+    flex-basis: 33,3333%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /* background-color: green; */
+    min-width: 27%;
+}
+
+.box-item-dk {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    flex: 1;
+}
+.box-item-dk .box__text-center {
+    font-size: 28px;
+    color: #ffff;
+    height: 42px;
+    padding: 16px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 200;
+}
+
+.box-item-dk.form_box {
+    display: flex;
+}
+.box-item-dk .form_input {
+    margin-bottom: 16px;
+}
+
+.box-item-dk .form_input button,
+.box-item-dk .form_input input {
+    height: 50px;
+    font-size: 16px;
+    padding: 6px 20px;
+    border:  1px solid transparent;;
+    width: 100%;
+    border-radius: 50px;
+    border: 1px solid transparent;
+    outline: none;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffff;
+}
+
+/* đổi màu placeholder thành màu trắng */
+.form_input input::placeholder {
+    color: white;
+}
+
+.box-item-dk .form_input button{
+    text-transform: uppercase;
+    background: #fbceb5 ;
+    border: 1px solid #fbceb5 ;
+    color: black;
+}
+
+.form_box .form_box-remember {
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom: 16px;
+}
+
+
+.form_box .form_box-remember label {
+    font-weight: 100;
+    padding: 6px 20px;
+}
+
+.form_box .form_box-remember .pdl {
+    margin-left: 20px;
+    height: 20px;
+    width: 18px;
+    margin-right: -8px;
+    /* background-color: #fbceb5;
+    color: none;
+    outline: #fbceb5;
+    padding: 12px; */
+}
+
+
+
+.box-item-dk .box__text-sub {
+    font-size: 16px;
+    color: #ffff;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.box__socil-media {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    height: 46px;
+}
+
+.box-item-dk .box__socil-media  > a{
+    color: black;
+    text-decoration: none;
+    background-color: #ffff;
+    flex-basis: 45%;
+    line-height: 46px;
+    border-radius: 8px;
+    transition: all linear .25s ;
+
+}
+
+.box-item-dk .box__socil-media a:hover {
+    color: #ffff;
+    background-color: black;
+}
+.box-item-dk .box-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 8px;
+    flex: 1;
+}
+
+.box-item-dk .box-footer p {
+    color: black;
+    padding: 6px 20px;
+    font-size: 16px;
+    width: 50%;
+}
+
+
+/* 
+
+public static QuanLySachDataContext db = new QuanLySachDataContext();
+        public static SACH infoSach = new SACH();
+
+try
+            {
+                if (Request.QueryString["IdSach"] != "")
+                {
+                    long IdGet = Convert.ToInt64(Request.QueryString["IdSach"]);
+                    LoadData(IdGet);
+                }
+                else
+                {
+                    Response.Redirect("TrangChu.aspx");
+                }
+            }
+            catch(Exception ex)
+            {
+                Response.Redirect("TrangChu.aspx");
+
+            }
+
+ void LoadData(long IdSachInput)
+        {
+            var data = from q in db.SACHes
+                       where q.IdSach == IdSachInput
+                       select q;
+            if(data !=null && data.Count()>0)
+            {
+                infoSach = data.First();
+            }
+        }
+
+
+
+<a href='<%="ChiTietSach.aspx?IdSach="+listSach[i].IdSach.ToString() %>'> <%=listSach[i].TenSach %> </a>
+
+
+
+
+
+
+
+
+
+
+public static QuanLySachDataContext db = new QuanLySachDataContext();
+        public static List<SACH> listSach = new List<SACH>();
+        public static DANHMUCSACH infoDM = new DANHMUCSACH();
+
+        try
+            {
+                if (Request.QueryString["IdDanhMuc"] != "")
+                {
+                    long IdGet = Convert.ToInt64(Request.QueryString["IdDanhMuc"]);
+                    LoadDM(IdGet);
+                    LoadDataSach(IdGet);
+                }
+                else
+                {
+                    Response.Redirect("TrangChu.aspx");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Redirect("TrangChu.aspx");
+
+            }
+
+
+
+
+            void LoadDM(long IdDMInput)
+        {
+            var data = from q in db.DANHMUCSACHes
+                       where q.IdDanhMuc == IdDMInput
+                       select q;
+            if(data !=null && data.Count()>0)
+            {
+                infoDM = data.First();
+            }
+        }
+
+        void LoadDataSach(long IdDMInput)
+        {
+            var data = from q in db.SACHes
+                       where q.IdDM == IdDMInput
+                       select q;
+            if(data!=null && data.Count()>0)
+            {
+                listSach = data.ToList();
+            }
+        }
+
+
+
+
+
+
+
+
+         <% for(int i=0;i<listSachXuHuong.Count;i++)
+                 { %>
+            <div class="swiper-slide hover:shadow-xl h-auto">
+              <!-- thumbnail -->
+              <div class="p-1"><img class="w-full h-auto" src='<%="./img/products/trending/"+listSachXuHuong[i].HinhAnh %>' alt="trending" /></div>
+              <!-- infomation: title - price - price old -->
+              <div class="p-2">
+                <a class="text-sm block line-clamp-2" href='<%="ChiTietSach.aspx?IdSach="+listSachXuHuong[i].IdSach.ToString() %>'> <%=listSachXuHuong[i].TenSach %> </a>
+                <div class="mt-1 text-base text-primary-700"> <%=listSachXuHuong[i].Gia %> </div>
+                <div class="text-sm text-gray-500 line-through"></div>
+              </div>
+            </div>
+            
+            <% } %>
+*/

@@ -1,0 +1,139 @@
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#coast {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    margin-top: 70px;
+}
+
+.container {
+    display: flex;
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.img-product,
+.infor-user {
+    flex: 1;
+}
+
+.img-product {
+    flex: 3; /* Điều chỉnh tỉ lệ theo nhu cầu */
+}
+
+.infor-user {
+    flex: 7; /* Điều chỉnh tỉ lệ theo nhu cầu */
+}
+
+/* ... (phần CSS còn lại) */
+
+
+.box-img-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-img-product img {
+    width: 75%;
+    margin-top: 44px;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.img-product:hover .box-img-product img {
+    transform: scale(1.1);
+}
+
+.img-product h4,
+.img-product p {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+
+.img-product h4 {
+    font-size: 20px;
+}
+
+.img-product p {
+    font-size: 30px;
+    color: #e44d26;
+}
+
+.infor-user {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infor-user h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.infor-user .message {
+    margin-bottom: 25px;
+}
+
+.infor-user label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.infor-user input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.infor-user input:focus {
+    border-color: #e44d26;
+}
+
+.infor-user button {
+    background-color: red;
+    color: #fff;
+    padding: 12px;
+    width: 205px;
+    margin-left: 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.infor-user button:hover {
+    background-color: #333;
+}
+
+.infor-user button {
+    font-weight: 600;
+}
+.box-fix {
+    display: block;
+    width: 70%;
+    margin-bottom: 5px;
+}

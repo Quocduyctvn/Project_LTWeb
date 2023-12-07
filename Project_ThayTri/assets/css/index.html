@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Add New Phone</title>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #343a40;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 3fr 7fr; /* Tỉ lệ 3:7 */
+    align-items: start; /* Căn chỉnh chiều cao */
+}
+
+label {
+    font-weight: bold;
+    color: #495057;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 6px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+button {
+    grid-column: span 2; /* Expand button to cover two columns */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        grid-template-columns: 1fr; /* Switch to single column layout on small screens */
+    }
+
+    input,
+    textarea,
+    select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    button {
+        grid-column: span 1; /* Revert button to single column width */
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Add New Phone</h1>
+        <form action="process.php" method="post">
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" name="productName" required>
+    
+            <label for="screen">Screen Size (inches):</label>
+            <input type="number" id="screen" name="screen" step="0.1" required>
+    
+            <label for="os">Operating System:</label>
+            <input type="text" id="os" name="os" required>
+    
+            <label for="frontCamera">Front Camera (MP):</label>
+            <input type="number" id="frontCamera" name="frontCamera" required>
+    
+            <label for="rearCamera">Rear Camera (MP):</label>
+            <input type="number" id="rearCamera" name="rearCamera" required>
+    
+            <label for="chip">Processor:</label>
+            <input type="text" id="chip" name="chip" required>
+    
+            <label for="ram">RAM (GB):</label>
+            <input type="number" id="ram" name="ram" required>
+    
+            <label for="storage">Storage Capacity (GB):</label>
+            <input type="number" id="storage" name="storage" required>
+    
+            <label for="battery">Battery Capacity (mAh):</label>
+            <input type="number" id="battery" name="battery" required>
+    
+            <label for="image">Image URL:</label>
+            <input type="url" id="image" name="image" required>
+    
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+    
+            <label for="discountPrice">Discounted Price:</label>
+            <input type="number" id="discountPrice" name="discountPrice">
+    
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+    
+            <label for="categoryId">Category:</label>
+            <select id="categoryId" name="categoryId" required>
+                <option value="1">Smartphones</option>
+                <option value="2">Android Phones</option>
+                <option value="3">iOS Phones</option>
+            </select>
+    
+            <button type="submit">Add Phone</button>
+        </form>
+    </div>
+    
+    </body>
+    </html>

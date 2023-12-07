@@ -1,0 +1,132 @@
+* {
+    margin-right: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-size14 {
+    font-size: 14px;
+}
+
+/* .detail__describe-img img {
+    width: 100%;
+} */
+
+.parameter-list {
+    /* border: 1px solid #; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.parameter-list .parameter-item {
+    display: flex;
+    flex-direction: row;
+}  
+
+/* <!-- Tên, đánh giá, liên quan    --> */
+
+.detail__describe-desc h3{
+        margin: 6px 0;
+        font-size: 24px;
+        text-align: justify;
+}
+
+.parameter-item .font-size {
+    border: 1px solid #6a737a;
+}
+
+.parameter-item .font-size p {
+    font-size: 15px;
+    margin: 8px 0;;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-star {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-star i {
+    display: inline-block;
+}
+
+.size .text-center p {
+    font-size: 32px;
+    color: #cb1c22;
+    font-weight: 600;
+    
+}
+
+ .sale > p {
+    font-size: 24px !important;
+}
+
+.text-center p {
+    margin: 6px 0;
+}
+
+.sale p:last-child {
+    text-decoration: line-through;
+}
+
+
+
+/* buy something */
+.detail-btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    line-height: 55px;
+    outline: none;
+    border-radius: 9px;
+    border: none;
+    color: #ffff;
+    background-color: #cb1c22;
+}
+
+
+.font-size14 h4, 
+.font-size14 p {
+    margin: 6px;
+}
+
+.font-size14 p a {
+    color: #0168fa;
+    cursor: pointer;
+}
+
+
+.btn__item {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    
+}
+
+.parameter-introduce p {
+    word-spacing: 3px;
+    text-align: justify;
+   
+}
+
+/* #tag lien quan */
+
+.img-item .list-img .stext-color{
+    color: black;
+}

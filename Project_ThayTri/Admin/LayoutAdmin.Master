@@ -1,0 +1,171 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LayoutAdmin.master.cs" Inherits="Project_ThayTri.Admin.LayoutAdmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/grid.css">
+    <!--fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/grid2.css">
+    <link rel="stylesheet" href="../assets/css/thanhtoan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="header1">
+                <div class=" he ader__category">
+                    <div class="header__nav-red">
+                        <div class="header-box-logo-shop">
+                            <a href="#">
+                                <img class="header-logo-shop" src="./img/logo-shop/logo/nobackground.png" alt=""></a>
+                        </div>
+
+                        <div class="header-box-btnsearch">
+                            <input class="header-btn" placeholder="Tìm Kiếm" />
+                            <i class="fa-solid fa-magnifying-glass header-icon-search"></i>
+                        </div>
+                        <div class="header-cart-shopping">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a href="">Giỏ hàng</a>
+                        </div>
+                        <div class="header-user">
+                            <i class="fas fa-plus-circle"></i>
+                            <a href="/CreateSanPham.aspx">Thêm Sản Phẫm</a>
+                        </div>
+                        <div class="header-user">
+                            <i class="fa-solid fa-user"></i>
+                            <a href="">Tài Khoản của tôi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+                <div class="footer__color-background">
+                    <div class="grid wide">
+                        <div class=" row ">
+                            <!-- list one -->
+                            <div class="col l-2-4  m-4 c-12 text-center">
+                                <!-- list 1 -->
+                                <ul>
+                                    <li class="info_fter"><a href="">Giới thiệu về công ty</a></li>
+                                    <li class="info_fter"><a href="">Chính sách bảo mật</a></li>
+                                    <li class="info_fter"><a href="">Quy chế hoạt động</a></li>
+                                    <li class="info_fter"><a href="">Kiểm tra hóa đơn điện tử</a></li>
+                                    <li class="info_fter"><a href="">Tra cứu thông tin bảo hành</a></li>
+                                    <li class="info_fter"><a href="">Câu hỏi thường gặp mua hàng</a></li>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img1.png"></span>
+                                    <span>
+                                        <img style="width: 130px;" src="./img/icon/ft-img2.png"></span>
+                                </ul>
+                            </div>
+                            <!-- list two -->
+                            <div class="col l-2-4 m-4 c-12 text-center ">
+                                <!-- list 2 -->
+                                <ul>
+                                    <li class="info_fter"><a href="">Tin tuyển dụng</a></li>
+                                    <li class="info_fter"><a href="">Tin khuyến mãi</a></li>
+                                    <li class="info_fter"><a href="">Hướng dẫn mua online</a></li>
+                                    <li class="info_fter"><a href="">Hướng dẫn mua trả góp</a></li>
+                                    <li class="info_fter"><a href="">Chính sách trả góp</a></li>
+                                    <li class="info_fter"><a href="">Chính sách thu thập và xử lý dữ liệu cá nhân</a></li>
+                                    <li class="info_fter">Chứng nhận:</li>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img3.png"></span>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img4.png"></span>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img5.png"></span>
+                                </ul>
+                            </div>
+                            <!-- list three -->
+                            <div class="col l-2-4 m-4 c-12 text-center ">
+                                <!-- list 3 -->
+                                <ul>
+                                    <li class="info_fter"><a href="">Hệ thống cửa hàng</a></li>
+                                    <li class="info_fter"><a href="">Chính sách đổi trả</a></li>
+                                    <li class="info_fter"><a href="">Hệ thống bảo hành</a></li>
+                                    <li class="info_fter"><a href="">Giới thiệu máy đổi trả</a></li>
+                                </ul>
+                            </div>
+                            <!-- list four -->
+                            <div class="col l-2-4 m-4 c-12 text-center">
+                                <!-- list 4 -->
+                                <ul>
+                                    <li class="info_fter_r">Tư vấn mua hàng (Miễn phí)</li>
+                                    <a class="tel" href="tel:1800 6601">1800 6601<span> (Nhánh 1)</span></a>
+                                    <li class="info_fter_r">Hỗ trợ kỹ thuật</li>
+                                    <a class="tel" href="tel:1800 6601">1800 6601<span> (Nhánh 2)</span></a>
+                                    <li class="info_fter_r">Góp ý, khiếu nại (8h00 - 22h00)</li>
+                                    <a class="tel" href="tel:1800 6616">1800 6616</a>
+                                    <li class="info_fter_r">Hỗ trợ thanh toán:</li>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img6.png"></span>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img9.png"></span>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img10.png"></span>
+                                    <span>
+                                        <img style="width: 40px;" src="./img/icon/ft-img12.png"></span>
+
+                                </ul>
+                            </div>
+                            <!-- list five -->
+                            <div class="col l-2-4 m-4 c-12 text-center ">
+                                <!-- list 5 -->
+                                <ul>
+                                    <li class="info_fter_r" style="padding: 0">Kết nối với chúng tôi:
+                                    <span>
+                                        <img style="width: 25px;" src="./img/icon/icon-zalo.png"></span>
+                                        <span>
+                                            <img style="width: 25px;" src="./img/icon/icon-facebook.png"></span></li>
+                                    <li class="info_fter_r">Website cùng FPT Retail:</li>
+                                    <li class="info_fter_r">Cửa hàng uỷ quyền bởi Apple:</li>
+                                    <sapn>
+										<img style="width: 130px;" src="./img/icon/ft-img16.png"></sapn>
+                                    <li class="info_fter_r">Trung tâm bảo hành uỷ quyền Apple:</li>
+                                    <span>
+                                        <img style="width: 130px;" src="./img/icon/ft-img17.png"></span>
+                                    <li class="info_fter_r">Chuỗi nhà thuốc:</li>
+                                    <span>
+                                        <img style="width: 130px;" src="./img/icon/ft-img18.png"></span>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                var sliderCurrent = 1;
+                displaySliderCurrent(sliderCurrent);
+
+                function SliderCurrent(x) {
+                    displaySliderCurrent(sliderCurrent += x)
+                }
+
+                function displaySliderCurrent(x) {
+                    var img = document.getElementsByClassName("img");
+                    if (x > img.length) sliderCurrent = 1;
+                    if (x < 1) sliderCurrent = img.length;
+                    for (var i = 0; i < img.length; i++) {
+                        img[i].style.display = "none";
+                    }
+                    img[sliderCurrent - 1].style.display = "block";
+                }
+
+            </script>
+        </div>
+    </form>
+</body>
+</html>

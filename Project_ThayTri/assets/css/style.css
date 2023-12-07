@@ -1,0 +1,476 @@
+* {
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html {
+  scroll-behavior: smooth; /* Trượt mượt với hiệu ứng trôi dạt */
+  background-color: rgb(249, 249, 249);
+}
+/* dùng chung */
+
+.mt-32 {
+    margin-top: 32px;
+}
+a {
+    text-decoration: none;
+}
+/* .font-size14 {
+    font-size: 14;
+}
+
+.font-size17 {
+    font-size: 17;
+} */
+
+ul,li {
+    list-style-type: none;
+}
+
+#main {
+
+}
+            /* header1 */
+#header1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+        /* header2 */
+#header2 {
+        position: fixed;
+        top: 56px;
+        left: 0;
+        right: 0;
+        z-index: 10;
+}
+
+.header__nav-red {
+    display: flex;
+    align-items: center;
+    background-color: #CD1818;
+    height: 56px;
+    justify-content: space-evenly;
+}
+
+.header-box-logo-shop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-logo-shop {
+    height: 56px;
+}
+
+.header-box-btnsearch {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.header__nav-red .header-box-btnsearch .header-btn {
+    width: 470px;
+    height: 38px;
+    background-color: #fff;
+    border: none;
+    padding: 0 16px;
+    outline: none;
+    font-size: 18px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+}
+
+.header__nav-red .header-box-btnsearch > i {
+    background-color: #252525;
+    color: #fff;
+    font-size: 20px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.header-btn {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+.header__nav-red .header-icon-search {
+    padding: 9px 12px;
+}
+
+.header__nav-red .header-user,
+.header__nav-red  .header-cart-shopping {
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+    cursor: pointer;
+    
+}
+
+.header__nav-red .header-user i ,
+.header__nav-red  .header-cart-shopping  i {
+    color: #fff ;
+    font-size: 15px;
+    margin-top: 4px;
+    padding: 0 8px;
+}
+
+.header__nav-red .header-user  a,
+.header__nav-red  .header-cart-shopping  a {
+    color: #fff ;
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+
+.header__nav-black {
+    background-color: #252525;
+    height: 36px;
+}
+
+.header__nav-black .header__menu .black__icons-laptop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    line-height: 35px;
+    margin: 0 8px;
+    color: #fff;
+}
+
+.header__nav-black .header__menu .black__icons-laptop i {
+    font-size: 18px;
+}
+
+
+
+
+
+
+.header__nav-black .header__menu  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.header__nav-black .header__menu a {
+    display: block;
+    color: #fff;
+    padding: 0 8px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header__nav-black .header__menu a::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    width: 0;
+    transition: width ease-in-out .4s;
+
+}
+
+.header__nav-black .header__menu a:hover::after {
+    width: 100%;
+}
+
+                /* slider */
+#slider {
+    margin-top: 72px;
+    margin-bottom: 40px;
+}
+
+.fix__sale img  {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    flex-basis: 100%;
+}
+
+.position_arrow_img {
+    position: relative;
+}
+
+.fix__sale  .vitri-ar {
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    padding: 0 16px;
+    font-size: 24px;
+    opacity: 1;
+}
+
+.position_arrow_img .fix__sale .arrow-left {
+    left: 0;
+    
+}
+
+.position_arrow_img .fix__sale .arrow-left i{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+.position_arrow_img .fix__sale .arrow-right {
+    right:  0;
+}
+    
+.position_arrow_img .fix__sale .arrow-right i{
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+#content {
+}
+
+/* category */
+.list__category {
+    flex-direction: column;
+}
+
+.list__category .caterogy h3 {
+    font-size: 18px;
+    color: #212529;
+}
+
+
+.sub__category {
+    display: flex;
+}
+
+.sub__category .categogy__sub__decs {
+    flex: 1;
+}
+
+.sub__category .categogy__sub__decs .input__magrin {
+    margin-right: 8px;
+}
+
+
+.sub__category .categogy__sub__decs li {
+    padding: 8px;
+}
+
+
+.sub__category .categogy__sub__decs li a{
+    color:  #4d4d4d;
+    font-size: 18px;
+}
+
+
+/* logo__product  */
+/* 
+thanh cuon  slider*/
+div.col.l-12.m-12.c-0  ::-webkit-scrollbar {
+    height: 1px;
+}
+
+
+div.col.l-12.m-12.c-0  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #ffa400, red);
+    border-radius: 15px;
+}
+
+div.col.l-12.m-12.c-0 ::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+/* 
+thanh cuon  slider*/
+
+/* Định nghĩa kiểu cho thanh cuộn */
+::-webkit-scrollbar {
+    width: 12px; /* Đặt chiều rộng của thanh cuộn */
+    height: 10px;
+}
+
+/* Định nghĩa vùng (phần mà nút di chuyển qua lại) */
+::-webkit-scrollbar-track {
+    background-color: none; /* Đặt màu của vùng */
+}
+
+/* Định nghĩa nút di chuyển của thanh cuộn */
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #ffa400, #00aefd);
+    /* Đặt màu của nút di chuyển */
+    border-radius: 15px; /* Đặt góc cong cho nút di chuyển */
+}
+
+/* Định nghĩa nút di chuyển của thanh cuộn khi di chuột qua */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Đặt màu của nút di chuyển khi di chuột qua */
+}
+
+.border {
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    display: block;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    
+}
+
+.border > h3 {
+    padding-top: 20px;
+}
+
+.list__img--logo.row {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: scroll;
+    height: 200px;
+}
+
+.list__img--logo .size-logo {
+    width: 25%;
+    padding: 10px;
+    transition: opacity .2s linear, transform .4s ease-in-out .1s;
+    
+}
+
+.list__img--logo .size-logo:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+    
+}
+
+/* nhu cau  demand*/
+
+.list__img--demand .demand--item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.list__img--demand .size-logo-demand {
+    width: 125px;
+    height: 150px;
+    border-radius: 50%;
+}
+.list__img--demand li {
+    flex-basis: 20%;
+}
+
+.list__img--demand .demand--item h3 {
+    color: #474c51;
+    font-size: 18px;
+    padding-top: 20px;
+    font-weight: 700;
+}
+
+.list__img--demand .demand--item:hover {
+    opacity: 0.9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* Laptop */
+
+.product__laptop .laptop-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.product__laptop img {
+    max-width: 250px;
+    transition: opacity .2s linear, transform .3s ease-in-out 0.07s;
+}
+
+.product__laptop img:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+
+.product__laptop div h4 {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 8px;
+    margin: 12px 0;;
+}
+
+.product__laptop div p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #212529;
+}
+
+.product__laptop .btn__click  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product__laptop .btn__detail {
+    font-size: 18px;
+    padding: 8px 48px;
+    margin: 0;
+    border-radius: 16px;
+    outline: none;
+    background-color: red;
+    color: #ffff;
+    border: none;
+}
+
+#footer .wide{
+    padding-top: 30px;
+}
+#footer {
+    margin-top: 32px;
+    background-color: rgba(0, 0, 0, 0.09); 
+}
+.footer-titel > ul{
+    font-size: 12px;
+}
+.footer__color-background {
+    margin-top: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.info_fter{
+    margin-bottom: 20px;
+}
+.info_fter >a{
+    color:#0664f9;
+}
+.info_fter:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.info_fter_r{
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.tel{
+    font-weight: bold;
+    color:#CD1818;
+    font-size: 20px;
+}
+.tel span{
+    color:#000000;
+    font-size: 15px;
+}
